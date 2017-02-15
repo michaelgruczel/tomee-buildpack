@@ -70,7 +70,7 @@ describe JavaBuildpack::Container::TomeeInstance do
 
     component.compile
 
-    root_webapp = app_dir + '.java-buildpack/tomee/webapps/ROOT'
+    root_webapp = app_dir + '.java-buildpack/tomee/webapps/ejb-examples'
 
     web_inf = root_webapp + 'WEB-INF'
     expect(web_inf).to exist
