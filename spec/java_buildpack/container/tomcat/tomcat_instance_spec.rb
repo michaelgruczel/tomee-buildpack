@@ -80,7 +80,7 @@ describe JavaBuildpack::Container::TomcatInstance do
 
     component.compile
 
-    root_webapp = app_dir + '.java-buildpack/tomcat/webapps/ROOT'
+    root_webapp = app_dir + '.java-buildpack/tomcat/webapps/ejb-examples'
 
     web_inf = root_webapp + 'WEB-INF'
     expect(web_inf).to exist
